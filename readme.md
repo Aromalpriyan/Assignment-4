@@ -25,3 +25,27 @@
 ### <P>3️. **Perform the simple interest calculation** using the formula.<P>
 ### <p>4️. **Display the result** in a user-friendly format.<p>
 ### <P>5️. **Close the Scanner object** after input handling.<p>
+```
+import java.util.Scanner;
+public class AssignmentFour{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter principal amount:");
+        double principal = sc.nextDouble();
+        System.out.println("Enter annual interest rate (in percentage):");
+        double rate = sc.nextDouble();
+        System.out.println("Enter time period (in years):");
+        double time = sc.nextDouble();
+        double interest = (principal * rate * time)/100;
+
+        System.out.println("simpleInterest : $" + interest);
+
+
+        sc.close();
+
+
+
+
+    }
+}
+```
